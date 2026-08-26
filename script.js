@@ -28,7 +28,7 @@ function botReply(userMessage) {
     if (msg.includes('hi') || msg.includes('hello')) {
         return "Hi there!  How can I assist you?";
     } else if (msg.includes('joke')) {
-        return "Why do programmers prefer dark mode? Because light attracts bugs!"";
+        return "Why do programmers prefer dark mode? Because light attracts bugs!";
     } else if (msg.includes('good morning')) {
         return "Good morning! Have a productive day ahead";
     } else if (msg.includes('your name')) {
