@@ -9,8 +9,8 @@ function addMessage(message, sender) {
     const icon = document.createElement('div');
     icon.classList.add('icon');
     icon.innerHTML = sender === 'bot'
-    ? '<i class="bi bi-robot"></i>'
-    : '<i class="bi bi-person-fill"></i>';
+    ? '<img src="https://res.cloudinary.com/dm7n4qqox/image/upload/v1762184828/happy-robot-3d-ai-character-600nw-2464455965_skdv51.jpg" class="bot-img">'
+    : '<img src="https://res.cloudinary.com/dm7n4qqox/image/upload/v1762263496/Laura_FIDigital_web_t2xt4z.png" class="user-img">';
 
     const text = document.createElement('div');
     text.classList.add('text');
@@ -26,13 +26,13 @@ function addMessage(message, sender) {
 function botReply(userMessage) {
     const msg = userMessage.toLowerCase();
     if (msg.includes('hi') || msg.includes('hello')) {
-        return "Hi there!  How can I assist you today?";
-    } else if (msg.includes('name')) {
-        return "I'm your friendly chatbot assistant 🤖";
+        return "Hi there!  How can I assist you?";
     } else if (msg.includes('joke')) {
-        return "😂 Why did the computer get cold? Because it forgot to close its Windows!";
-    } else if (msg.includes('help')) {
-        return "Sure! You can ask me about jokes, greetings, or my name!";
+        return "Why do programmers prefer dark mode? Because light attracts bugs!"";
+    } else if (msg.includes('good morning')) {
+        return "Good morning! Have a productive day ahead";
+    } else if (msg.includes('your name')) {
+        return "I'm your friendly assistant!";
     } else {
         return "Sorry, I didn't understand that. Try saying 'hi' or 'tell me a joke'.";
     }
